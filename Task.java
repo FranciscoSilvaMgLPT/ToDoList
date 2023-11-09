@@ -15,6 +15,7 @@ public class Task {
     }
 
     public Task(String description, String info, Timestamp timestamp) {
+        this.done = false;
         this.description = description;
         this.info = info;
         this.timestamp = timestamp;
@@ -50,4 +51,5 @@ public class Task {
 
         return description +"/"+ info +"/"+ done +"/"+ timestamp+"\n";
     }
+
 }

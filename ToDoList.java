@@ -31,6 +31,7 @@ public class ToDoList {
             userChoice = -10;
             int done = 0;
 
+
             if (sleep == 0) {
                 Thread.sleep(2500);
                 sleep++;
@@ -50,6 +51,7 @@ public class ToDoList {
             } else {
                 percentage = (done * 100) / tasks.size();
             }
+
             System.out.println("                                                                  Number of tasks: " + tasks.size() + "  (" + percentage + "% completed!)");
 
             System.out.println("\n                                                                  \u001b[38;5;15m1 - Show ToDoList\u001b[0m");
